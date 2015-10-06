@@ -7,17 +7,18 @@ import sys
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'test_settings')
 
 PACKAGES = [
-    'payments',
-    'payments.authorizenet',
-    'payments.braintree',
-    'payments.cybersource',
-    'payments.dummy',
-    'payments.dotpay',
-    'payments.paypal',
-    'payments.sagepay',
-    'payments.sofort',
-    'payments.stripe',
-    'payments.wallet']
+    'pysar_payments',
+    'pysar_payments.authorizenet',
+    'pysar_payments.braintree',
+    'pysar_payments.cybersource',
+    'pysar_payments.dummy',
+    'pysar_payments.dotpay',
+    'pysar_payments.paypal',
+    'pysar_payments.sagepay',
+    'pysar_payments.sofort',
+    'pysar_payments.stripe',
+    'pysar_payments.wallet',
+    'pysar_payments.wire']
 
 REQUIREMENTS = [
     'braintree>=3.14.0',
@@ -50,12 +51,12 @@ class PyTest(TestCommand):
 
 
 setup(
-    name='django-payments',
+    name='django-pysar_payments',
     author='Mirumee Software',
     author_email='hello@mirumee.com',
-    description='Universal payment handling for Django',
-    version='0.7.2',
-    url='http://github.com/mirumee/django-payments',
+    description='Universal payment handling for Django (forked)',
+    version='0.7.3',
+    url='https://github.com/imakin/django-payments',
     packages=PACKAGES,
     include_package_data=True,
     classifiers=[
